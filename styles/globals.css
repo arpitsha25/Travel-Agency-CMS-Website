@@ -1,27 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.main_container{
+  @apply mx-20;
+}
+.button-primary{
+  @apply flex gap-[10px] items-center px-3 py-1 rounded-md bg-slate-500
+}
+
+.button-primary2{
+  @apply  flex gap-2 justify-center items-center px-4 py-2  bg-slate-500
+}
+
+.slider_class{
+  height: calc(85vh - 99px);
+}
+
+.card{
+  @apply relative h-[250px] lg:w-[28%] md:w-[75%] w-[95%] rounded-lg overflow-hidden  drop-shadow-md;
+}
+
+@media (max-width: 640px) {
+  .slider_class{
+    height: calc(100vh - 299px);
   }
 }
