@@ -4,7 +4,7 @@ import { FaQuoteRight } from "react-icons/fa";
 import user from "../../public/user.webp";
 import user2 from "../../public/user2.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
