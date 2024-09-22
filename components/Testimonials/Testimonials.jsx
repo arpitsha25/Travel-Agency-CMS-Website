@@ -81,11 +81,14 @@ const Testimonials = () => {
             return (
               <SwiperSlide key={index} className="slideee">
                 <div className="flex flex-col justify-between  w-[90%] ">
-                  <div className="flex justify-center  ">
+                  <div className="flex justify-center flex-col items-center gap-2 ">
                     <Image
                       src={testimonial.profile}
                       className="object-cover rounded-[50%] h-[75px] w-[75px]"
                     />
+                    <div className="text-[14px]">
+                    {testimonial.name}
+                    </div>
                   </div>
                   <div className=" text-[40px] text-[#666666] opacity-20 ">
                     <FaQuoteLeft />
@@ -93,9 +96,6 @@ const Testimonials = () => {
                   <div className="flex flex-col items-center w-full h-full gap-3">
                     <div className="w-[80%] text-[14px] ">
                       {testimonial.description}
-                    </div>
-                    <div className="w-[80%] flex justify-end text-[14px] ">
-                      -- {testimonial.name}
                     </div>
                   </div>
                   <div className=" flex justify-end text-[40px] text-[#666666] opacity-20 ">
