@@ -16,7 +16,6 @@ const Offers = () => {
       </div>
       <div className="flex lg:flex-row flex-col items-center gap-5 w-full justify-around mb-10 ">
         <div className="card group">
-          {/* <img src={Offer1.src} alt='offer1'/> */}
           <Image
             src={Offer1}
             className=" w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out transform group-hover:scale-110"
@@ -75,6 +74,7 @@ const Offers = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };
