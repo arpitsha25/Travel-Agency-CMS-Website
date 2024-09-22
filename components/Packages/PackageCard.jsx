@@ -33,7 +33,7 @@ const PackageCard = (props) => {
           <hr className="border-gray-300 w-full pb-2"></hr>
           <div className="flex justify-between">
             <div className="flex flex-col text-[14px]">
-              <p>From </p>
+              <p>From <span className="line-through">{props.strikeprice}</span></p>
               <p className="text-[22px] text-green-500">INR {props.price}</p>
             </div>
             <div className="flex items-center gap-2 text-[14px]">
