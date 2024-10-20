@@ -64,7 +64,7 @@ const Testimonials = () => {
           spaceBetween={0}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 0,
             },
             0: {
@@ -80,7 +80,7 @@ const Testimonials = () => {
           {testimonialsData?.map((testimonial, index) => {
             return (
               <SwiperSlide key={index} className="slideee">
-                <div className="flex flex-col justify-between  w-[90%] ">
+                <div className="flex flex-col justify-between  w-[90%] lg:w-[60%] ">
                   <div className="flex justify-center flex-col items-center gap-2 ">
                     <Image
                       src={testimonial.profile}
@@ -94,7 +94,7 @@ const Testimonials = () => {
                     <FaQuoteLeft />
                   </div>
                   <div className="flex flex-col items-center w-full h-full gap-3">
-                    <div className="w-[80%] text-[14px] ">
+                    <div className="w-[80%] text-[14px]">
                       {testimonial.description}
                     </div>
                   </div>
