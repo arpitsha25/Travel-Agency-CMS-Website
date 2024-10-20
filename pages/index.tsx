@@ -4,6 +4,8 @@ import Offers from '../components/Offers/Offers'
 import Packages from '../components/Packages/Packages'
 import Services from '../components/Services/Services'
 import Testimonials from '../components/Testimonials/Testimonials'
+import Footer from '../components/Footer/Footer'
+import NewsletterSection from '../components/Newletter/Newsletter'
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       </div>
       <Services/>
       <Testimonials/>
+      <NewsletterSection/>
+      <Footer/>
     </div>
   );
 }

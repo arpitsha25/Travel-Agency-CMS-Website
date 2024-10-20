@@ -14,7 +14,7 @@ const Menu = () => {
     { label: "Contact Us" },
     { label: "Blogs" },
   ];
-  console.log("Hamburger",Hamburger)
+
   return (
     <>
     <div className="h-[24px] flex justify-center items-center text-white bg-slate-500 text-[12px] font-Roboto">
@@ -62,7 +62,7 @@ const Menu = () => {
         {navbuttons?.map((navitem) => {
           return (
             <>
-              <h2>{navitem.label}</h2>
+              <h2 key={navitem.label}>{navitem.label}</h2>
             </>
           );
         })}
