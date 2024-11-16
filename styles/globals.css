@@ -27,7 +27,7 @@ body {
 }
 
 .package-card{
-  @apply relative h-[550px] lg:h-[450px]  lg:w-[23%] md:w-[45%] w-[90%]  overflow-hidden  drop-shadow-md border-2 rounded-3xl rounded-tr-3xl rounded-bl-lg rounded-br-lg;
+  @apply relative h-[420px]   lg:w-[23%] md:w-[45%] w-[90%]  overflow-hidden  drop-shadow-md border-2 rounded-3xl rounded-tr-3xl rounded-bl-lg rounded-br-lg;
 }
 
 .service_icon{
