@@ -1,6 +1,6 @@
 let CONSTANTS = {
     Menu : {
-        Logo : "Logo"
+        Logo : "TWA"
     }
 }
 export {CONSTANTS}

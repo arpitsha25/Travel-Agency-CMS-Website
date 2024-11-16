@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { IoMdStar } from "react-icons/io";
 
 import Image from "next/image";
 const Testimonials = () => {
@@ -16,36 +17,43 @@ const Testimonials = () => {
       description:
         "I recently booked a trip to Bali through Travel with us, and it was hands down the best vacation I’ve ever had. From the seamless booking process to the handpicked accommodations, everything was perfect. The itinerary was well-balanced with adventure, culture, and relaxation. Our guide was knowledgeable and made sure we experienced the local culture authentically.",
       name: "Arpit Sharma",
+      rating : 4
     },
     {
       profile: user2,
       description:
         "Thanks to Travel with us, my trip to the Maldives was an absolute dream come true. The service was exceptional from start to finish, with every detail carefully planned. The island resort was stunning, and the activities like snorkeling and sunset cruises were beyond my expectations.",
       name: "Rishabh Shukla",
+      rating : 5
     },
     {
       profile: user,
       description:
         "I recently booked a trip to Bali through Travel with us, and it was hands down the best vacation I’ve ever had. From the seamless booking process to the handpicked accommodations, everything was perfect. The itinerary was well-balanced with adventure, culture, and relaxation. Our guide was knowledgeable and made sure we experienced the local culture authentically.",
       name: "Arpit Sharma",
+      rating : 5
     },
     {
       profile: user2,
       description:
         "Thanks to Travel with us, my trip to the Maldives was an absolute dream come true. The service was exceptional from start to finish, with every detail carefully planned. The island resort was stunning, and the activities like snorkeling and sunset cruises were beyond my expectations.",
       name: "Rishabh Shukla",
+      rating : 4
     },
     {
       profile: user,
       description:
         "I recently booked a trip to Bali through Travel with us, and it was hands down the best vacation I’ve ever had. From the seamless booking process to the handpicked accommodations, everything was perfect. The itinerary was well-balanced with adventure, culture, and relaxation. Our guide was knowledgeable and made sure we experienced the local culture authentically.",
       name: "Arpit Sharma",
+      rating : 5
+
     },
     {
       profile: user2,
       description:
         "Thanks to Travel with us, my trip to the Maldives was an absolute dream come true. The service was exceptional from start to finish, with every detail carefully planned. The island resort was stunning, and the activities like snorkeling and sunset cruises were beyond my expectations.",
       name: "Rishabh Shukla",
+      rating : 4
     },
   ];
   return (
@@ -54,7 +62,7 @@ const Testimonials = () => {
         <div className="font-Smooch italic text-[22px] text-green-500 ">
           What our client says
         </div>
-        <div id="packages" className="font-Roboto font-bold text-[32px]">
+        <div id="packages" className="font-Roboto font-bold lg:text-[32px] text-[24px]">
           TESTIMONIALS
         </div>
       </div>
@@ -86,9 +94,14 @@ const Testimonials = () => {
                       src={testimonial.profile}
                       className="object-cover rounded-[50%] h-[75px] w-[75px]"
                     />
-                    <div className="text-[14px]">
-                    {testimonial.name}
+                  <div className="text-[14px] flex flex-col items-center">
+                    <div>{testimonial.name}</div>
+                    <div className="flex space-x-1 text-yellow-400 text-[16px]">
+                      {Array(testimonial.rating).fill().map((_, index) => (
+                        <IoMdStar key={index} />
+                      ))}
                     </div>
+                  </div>
                   </div>
                   <div className=" text-[40px] text-[#666666] opacity-20 ">
                     <FaQuoteLeft />

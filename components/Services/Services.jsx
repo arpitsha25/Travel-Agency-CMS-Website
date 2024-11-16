@@ -15,7 +15,7 @@ const Services = () => {
           </div>
           <div
             id="packages"
-            className="font-Roboto font-bold text-[32px] text-white"
+            className="font-Roboto font-bold lg:text-[32px] text-[24px] text-white"
           >
             OUR SERVICES
           </div>

@@ -139,7 +139,7 @@ const Packages = () => {
         <div className="font-Smooch italic text-[22px] text-green-500 ">
           Book Now
         </div>
-        <div id = 'packages' className="font-Roboto font-bold text-[32px]">
+        <div id = 'packages' className="font-Roboto font-bold lg:text-[32px] text-[24px]">
           POPULAR PACKAGES
         </div>
       </div>}

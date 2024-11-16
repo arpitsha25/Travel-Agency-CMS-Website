@@ -12,8 +12,8 @@ export default function Home() {
     <div>
       <Menu/>
       <Slider/>
-      <div className='main_container'>
       <Offers/>
+      <div className='main_container'>
       <Packages/>
       </div>
       <Services/>

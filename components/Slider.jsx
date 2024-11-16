@@ -59,8 +59,8 @@ const Slider = () => {
                             </div>
                             <div className='absolute inset-0 flex items-end justify-center text-white z-10 bottom-10'>
                                 <div className='w-[75%] flex flex-col items-center justify-center'>
-                                <h1 className='text-[32px] font-bold text-center'>{item.title.toUpperCase()}</h1>
-                                <p className='text-center'>{item.desc}</p>
+                                <h1 className='lg:text-[32px] text-[24px] font-bold text-center'>{item.title.toUpperCase()}</h1>
+                                <p className='text-center lg:text-[16px] text-[14px]'>{item.desc}</p>
                                 </div>
                             </div>
                         </div>

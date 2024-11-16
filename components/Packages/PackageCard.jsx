@@ -40,7 +40,7 @@ const PackageCard = (props) => {
               <div className=" text-center">
                 <h2>
                   <button className="button-primary2 rounded-lg">
-                    Explore
+                    Enquire now
                     <FaArrowRight />
                   </button>
                 </h2>

@@ -21,7 +21,12 @@ const Menu = () => {
         Offers Available for limited period....Hurry Up
     </div>
     <div className={`flex justify-between items-center h-[75px]  bg-[#231535] text-white px-10  font-Roboto`}>
-      <h2>{Menus.Logo}</h2>
+    <a
+        href="#"
+        className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+      >
+        {Menus.Logo}
+      </a>
       <div className="flex gap-10 items-center">
         <div className="lg:flex hidden gap-10 items-center">
         {navbuttons?.map((navitem) => {
