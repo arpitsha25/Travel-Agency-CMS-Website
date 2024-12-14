@@ -57,7 +57,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="main_container">
+    <div className="main_container" id="testimonials">
       <div className="p-5 w-full flex justify-center items-center flex-col">
         <div className="font-Smooch italic text-[22px] text-green-500 ">
           What our client says

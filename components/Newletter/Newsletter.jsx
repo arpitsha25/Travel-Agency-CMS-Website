@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewsletterSection = () => {
   return (
-    <section className="mt-10 bg-white overflow-hidden">
+    <section className="mt-10 bg-white overflow-hidden mb-10">
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap xl:items-center -m-8">
           <div className="w-full md:w-1/2 p-8">

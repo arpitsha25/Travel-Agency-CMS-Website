@@ -48,6 +48,7 @@ const Slider = () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
       className='slider_class'
+      id='home'
     >
         {SliderContent?.map((item,index)=>{
             return(
