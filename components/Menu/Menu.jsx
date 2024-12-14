@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { CONSTANTS } from "../../helpers/constants";
 import { MdCall } from "react-icons/md";
-import { MdCloudDone } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useRouter } from "next/router";
 import { RiAdminFill } from "react-icons/ri";
