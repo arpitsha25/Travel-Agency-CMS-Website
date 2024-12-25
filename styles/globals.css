@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main_container{
+  @apply mx-20;
+}
+.button-primary{
+  @apply flex gap-[10px] items-center px-3 py-1 rounded-md bg-slate-500
+}
+
+.button-primary2{
+  @apply  flex gap-2 justify-center items-center px-4 py-2  bg-[#231535] text-white
+}
+
+.slider_class{
+  height: calc(85vh - 99px);
+}
+
+.card{
+  @apply relative lg:h-[250px] h-[200px]  lg:w-[28%] md:w-[75%] w-[95%] rounded-lg overflow-hidden  drop-shadow-md;
+}
+
+.package-card{
+  @apply relative h-[420px]   lg:w-[23%] md:w-[45%] w-[90%]  overflow-hidden  drop-shadow-md border-2 rounded-3xl rounded-tr-3xl rounded-bl-lg rounded-br-lg;
+}
+
+.service_icon{
+  @apply flex flex-col items-center gap-4  text-white hover:text-green-500
+}
+.slideee{
+  @apply flex justify-center !important
+}
+@media (max-width: 640px) {
+  .slider_class{
+    height: calc(100vh - 299px);
+  }
+  .main_container{
+    @apply mx-0;
+  }
+}
