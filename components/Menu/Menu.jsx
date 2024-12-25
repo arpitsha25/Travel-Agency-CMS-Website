@@ -78,7 +78,7 @@ const Menu = () => {
                 <span className="w-2 h-2 rounded-full bg-red-500"></span> {/* Red circular dot */}
               </button>
             </h2>
-
+            
           </div>
           <h2 className="lg:hidden">
             <button
