@@ -4,6 +4,7 @@ import Packages from '../components/Packages/Packages'
 import Services from '../components/Services/Services'
 import Testimonials from '../components/Testimonials/Testimonials'
 import NewsletterSection from '../components/Newletter/Newsletter'
+import FAQSection from '../components/FAQ/faq'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services/>
       <Testimonials/>
       <NewsletterSection/>
+      <FAQSection/>
     </div>
   );
 }

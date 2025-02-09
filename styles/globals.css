@@ -36,6 +36,10 @@ body {
 .slideee{
   @apply flex justify-center !important
 }
+
+.pt-18.sm\:pt-14.px-8.sm\:px-10.pb-18.bg-white.rounded-4xl.shadow-lg{
+  padding-top: 20px;
+}
 @media (max-width: 640px) {
   .slider_class{
     height: calc(100vh - 299px);
