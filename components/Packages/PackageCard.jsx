@@ -49,7 +49,7 @@ const PackageCard = (props) => {
             <div className="flex items-center gap-2 text-[14px]">
               <div className=" text-center">
                 <h2>
-                  <button className="button-primary2 rounded-lg">
+                  <button className="button-primary2 rounded-l-lg">
                     Enquire now
                     <FaArrowRight />
                   </button>

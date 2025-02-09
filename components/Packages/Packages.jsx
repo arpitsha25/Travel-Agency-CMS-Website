@@ -164,7 +164,7 @@ const Packages = () => {
           Book Now
         </div>
         <div id = 'packages' className="font-Roboto font-bold lg:text-[32px] text-[24px]">
-          POPULAR PACKAGES
+          FEATURED PACKAGES
         </div>
       </div>}
       <div className="relative flex flex-wrap md:flex-row flex-col items-center w-full justify-around mb-10 gap-5 ">
@@ -186,7 +186,7 @@ const Packages = () => {
           );
         })}
       </div>
-      {router.pathname !== '/allpackages' && <div className=" w-full flex justify-center items-center flex-col">
+      {/* {router.pathname !== '/allpackages' && <div className=" w-full flex justify-center items-center flex-col">
         <div className=" text-center">
           <h2>
             <button className="button-primary2" onClick={()=>router.push('/allpackages')}>
@@ -195,7 +195,7 @@ const Packages = () => {
             </button>
           </h2>
         </div>
-      </div>}
+      </div>} */}
       {/* <div className="p-5 w-full flex justify-center items-center flex-col">
         <div className="font-Smooch italic text-[22px] text-green-500 ">
           Whats New
