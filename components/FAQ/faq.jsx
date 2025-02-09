@@ -19,7 +19,7 @@ const AccordionItem = ({ question, answer }) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="max-w-xl pr-5">
-        <h3 className={`text-[18px] font-semibold ${isOpen ? 'text-orange-900' : 'text-black'}`}>
+        <h3 className={`text-[16px] sm:text-[18px] font-semibold ${isOpen ? 'text-orange-900' : 'text-black'}`}>
           {question}
         </h3>
         {/* The answer container: its height toggles to show/hide the content */}
