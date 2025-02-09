@@ -3,7 +3,7 @@ import PKG1 from "../../public/PKG1.jpg";
 import PKG2 from "../../public/PKG2.jpg";
 import PKG3 from "../../public/PKG3.jpg";
 import PKG4 from "../../public/PKG4.jpg";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 import PackageCard from "./PackageCard";
 import { useRouter } from "next/router";
 const Packages = () => {
