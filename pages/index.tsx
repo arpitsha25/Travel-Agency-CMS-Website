@@ -15,8 +15,8 @@ export default function Home() {
       <Packages/>
       </div>
       <Services/>
-      <Testimonials/>
       <NewsletterSection/>
+      <Testimonials/>
       <FAQSection/>
     </div>
   );
