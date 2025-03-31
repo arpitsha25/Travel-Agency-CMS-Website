@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { toast } from "react-toastify";
 
 const Admin = () => {
   const {
@@ -10,7 +11,8 @@ const Admin = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch('http://localhost:4000/login', {
+      console.log("data",data)
+      const response = await fetch('/api/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -21,17 +23,13 @@ const Admin = () => {
       const result = await response.json()
 
       if (response.ok) {
-        // handle successful login
-        console.log('Login successful', result)
-        // alert('Login successful!')
+        toast.success("Login successful")
       } else {
-        // handle error, like invalid credentials
-        console.error('Login failed', result)
-        // alert('Login failed. Please check your credentials.')
+        toast.error("Login failed. Please check your credentials.")
       }
     } catch (error) {
+      toast.success("Error occurred during login")
       console.error('Error occurred during login', error)
-    //   alert('An error occurred. Please try again later.')
     }
   }
 
@@ -69,7 +67,6 @@ const Admin = () => {
               {errors.password && <span className="text-red-500 text-xs">{errors.password.message}</span>}
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               className="bg-[#231535] text-white py-2 px-4 rounded-md mt-4 hover:bg-blue-600 transition duration-200"

@@ -2,6 +2,8 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "../components/Layout/layout";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import styles for toastify
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      {/* Add ToastContainer here */}
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 }
