@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from "react-toastify";
 
 const Admin = () => {
+  const router =  useRouter()
   const {
     register, 
     handleSubmit, 
@@ -20,10 +22,12 @@ const Admin = () => {
         body: JSON.stringify(data),
       })
 
-      // const result = await response.json()
-
+      const result = await response.json()
       if (response.ok) {
+        localStorage.setItem('token', result.token); // Store token
+        router.push("/dashboard")
         toast.success("Login successful")
+
       } else {
         toast.error("Login failed. Please check your credentials.")
       }

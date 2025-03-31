@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { CONSTANTS } from "../../helpers/constants";
 import { MdCall } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -9,6 +9,13 @@ const Menus = CONSTANTS.Menu;
 const Menu = () => {
   const [Hamburger, setHamburger] = useState(false);
   const router = useRouter();
+  const [isAuthenticated, setIsAuthenticated] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsAuthenticated(!!localStorage.getItem("token"));
+    }
+  }, []);
   const navbuttons = [
     { label: "Home", target: "/" },
     { label: "Our Tours", target: "/admin" },
@@ -75,7 +82,8 @@ const Menu = () => {
               >
                 <RiAdminFill />
                 Admin
-                <span className="w-2 h-2 rounded-full bg-red-500"></span> {/* Red circular dot */}
+                
+                <span className={`w-2 h-2 rounded-full ${isAuthenticated ?  'bg-green-500' : 'bg-red-500'}`}></span>  {/* Red circular dot */}
               </button>
             </h2>
             
