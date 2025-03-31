@@ -20,7 +20,7 @@ const Admin = () => {
         body: JSON.stringify(data),
       })
 
-      const result = await response.json()
+      // const result = await response.json()
 
       if (response.ok) {
         toast.success("Login successful")
